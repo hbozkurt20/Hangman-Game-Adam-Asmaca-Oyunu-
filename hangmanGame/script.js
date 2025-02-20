@@ -116,18 +116,3 @@ playAgainBtn.addEventListener("click", () => {
 
 
 
-
-
-// playAgainBtn.addEventListener("click", () => {
-//     correctLetters.splice(0);
-//     wrongLetters.splice(0);
-    
-
-//     selectedWord = getRandomWord();
-//     displayWord();
-//     updateWrongLetters();
-
-//     popup.style.display = "none";
-//     miniPopup.classList.remove("wrong-popup");
-
-// });
