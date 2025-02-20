@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #3a444e;
+    color: #fff;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    padding: 20px 20px;
+    height: 450px;
+    width: 450px;
+}
+
+.grafik {
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 4px;
+}
+
+.item {
+    display: none;
+}
+
+#wrong-letters {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+#word {
+    position: absolute;
+    display: flex;
+    bottom: 10px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.letter{
+    border-bottom:3px solid yellow;
+    font-size: 30px;
+    margin: 0 3px;
+    display: inline-flex;
+    height: 40px;
+    width: 25px;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#popup-container {
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup {
+    background: rgb(7, 88, 7);
+    padding: 20px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+#message {
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 80px;
+    position: absolute;
+    bottom: -80px;
+    display: none;
+    transition: transform 0.4s ease-in-out;
+}
+
+.show {
+    transform: translateY(-80px);
+    display: block !important;
+}
+
+.wrong-popup{
+    background: rgb(117, 14, 14);
+}
+
+.ipucu{
+    display: flex;
+    margin-top:15px ;
+    color: rgb(182, 111, 18);
+    font-size: 20px;
+}
+
+
+
+@media(max-width : 700px){
+    .popup-container{
+        transform: translateY(-20px);
+    }
+}
+
+@media(max-width : 460px){
+    .popup-container{
+        transform: translateY(-80px);
+    }
+}
+
+@media(max-width : 345px){
+    .popup-container{
+        transform: translateY(-100px);
+    }
+}
